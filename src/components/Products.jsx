@@ -10,6 +10,7 @@ const Products = () => {
   } = useQuery({
     queryKey: ['products'],
     queryFn: getProducts,
+    select: (products) => products.sort((a, b) => b.id - a.id),
   });
 
   if (isLoading) {
@@ -25,7 +26,7 @@ const Products = () => {
       <p>{product.description}</p>
       <p>{product.price}</p>
       <button>Delete</button>
-      <input type='checkbox' />
+      <input type='checkbox' checked={product.inStock} />
       <label htmlFor=''>In Stock</label>
     </div>
   ));

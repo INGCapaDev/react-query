@@ -20,6 +20,34 @@
       "description": "keyboard gaming",
       "price": 200,
       "inStock": true
+    },
+    {
+      "name": "server",
+      "description": "server web",
+      "price": "1000",
+      "inStock": true,
+      "id": 4
+    },
+    {
+      "name": "nuevo",
+      "description": "Un nuevo producto",
+      "price": "1023",
+      "inStock": true,
+      "id": 5
+    },
+    {
+      "name": "mouse gaming",
+      "description": "razer mouse gaming",
+      "price": "300",
+      "inStock": true,
+      "id": 6
+    },
+    {
+      "name": "monitor",
+      "description": "hp",
+      "price": "12",
+      "inStock": true,
+      "id": 7
     }
   ]
 }
